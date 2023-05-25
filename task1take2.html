@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>task 1</title>
+        <style>
+            #header{
+                position: absolute;
+                width: 1440px;
+                height: 508px;
+                left: 0px;
+                top: -61px;
+
+                background: #656CEC;
+                border-radius: 64px;
+            }
+            #heading{
+                display:flex;
+               align-items: center;
+               justify-content: center;
+                /* width: 1440px; */
+                height: 122px;
+                left: 0px;
+                top: 0px;
+
+                background: #656CEC;
+            }
+            #heading1{
+               
+                width: 362px;
+                height: 58px;
+                left: 558px;
+                top: 18px;
+
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 64px;
+                /* or 100% */
+                margin: 0 0;
+                margin-top: 45px;
+                margin-bottom: 5px;
+                color: #FFFFFF;
+            }
+            #h1{
+                position: absolute;
+                width: 1440px;
+                height: 0px;
+                left: 0px;
+                top: 120px;
+
+                border: 2px solid #FFFFFF;
+                transform: rotate(-0.12deg);
+            }
+            #circle2{
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                left: 406px;
+                top: 174px;
+                border-radius: 50%;
+                display: block;
+                background: #BABEFF;
+            }
+            #circle1{position: absolute;
+                width: 36px;
+                height: 36px;
+                left: 698px;
+                top: 135px;
+                border-radius: 50%;
+                display: block;
+                background: #BABEFF;
+
+            }
+            #circle3{
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                left: 983px;
+                top: 174px;
+                border-radius: 50%;
+                display: block;
+                background: #BABEFF;
+
+            }
+            .container{
+                height: 36px;
+                width: 36px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                display: block;
+                color: #FFFFFF;
+                margin: 0 0;
+                text-align: center;
+                margin-top: 2px
+            }
+            #oc2{
+                position: absolute;
+                width: 172px;
+                height: 172px;
+                left: 338px;
+                top: 216px;
+                border-radius: 50%;
+                display: block;
+                background: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            #ic2{
+                /* position: absolute; */
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                display: block;
+                background: #BABEFF;
+                
+
+            }
+            #oc1{
+                position: absolute;
+                width: 230.97px;
+                height: 230.97px;
+                left: 602px;
+                top: 175px;
+                border-radius: 50%;
+                display: block;
+                background: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            #ic1{
+                
+                width: 214.86px;
+                height: 214.86px;
+                display: block;
+                border-radius: 50%;
+                background: #BABEFF;
+                
+            }
+            #oc3{position: absolute;
+                width: 172px;
+                height: 172px;
+                left: 914px;
+                top: 216px;
+                border-radius: 50%;
+                background: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            #ic3{
+                position: absolute;
+                width: 160px;
+                height: 160px;
+                display: block;
+                border-radius: 50%;
+                background: #BABEFF;
+                
+            }
+            .rect1{position: absolute;
+            width: 156px;
+            height: 32px;
+            
+
+            background: #BABEFF;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            }
+            #re1{
+                left: 346px;
+                top: 395px;
+
+            }
+            #re2{
+                left: 920px;
+                top: 394px;
+
+            }
+            .text1{
+                position: absolute;
+                width: 130px;
+                height: 20px;
+                
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                /* line-height: 24px; */
+
+                color: #FFFFFF;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .text1 p{
+                text-align: center;
+                margin: 0 0;
+
+            }
+            #rect3{
+                position: absolute;
+                width: 228.29px;
+                height: 42.97px;
+                left: 608.71px;
+                top: 410px;
+
+                background: #BABEFF;
+                border-radius: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .bars{
+                position: absolute;
+                width: 1440px;
+                
+                height: 100px;
+
+                background: #D2D4F2;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+            #bar1{
+                top: 470px;
+                left: 0px;
+            }
+            #bar2{
+                left: 0px;
+                top: 584px;
+            }
+            #bar3{
+                left: 0px;
+                top: 698px;
+            }
+            #bar4{
+                left: 0px;
+                top: 813px;
+            }
+            #bar5{
+                left: 0px;
+                top: 927px;
+            }
+            .text3, .icon, .name, .score{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                
+            
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                /* line-height: 39px; */
+                
+
+            }
+            .text4{
+                margin: 0 0;
+                
+            }
+            .text3{
+                
+                position: absolute;
+                width: 23px;
+                height: 36px;
+                left: 40px;
+                
+                color: #1E1E1E;
+            }
+            .icon{
+                
+                position: absolute;
+                width: 74.42px;
+                height: 74.42px;
+                border-radius: 50%;
+                border: 2px solid white;
+                left: 127.79px;
+                background: #BABEFF;
+                display: inline-block;
+            }
+            .name{
+                
+                position: absolute;
+                width: 227px;
+                height: 36px;
+                left: 255px;
+                
+                color: #1E1E1E;
+            }
+            .score{
+                position: absolute;
+                width: 227px;
+                height: 36px;
+                left: 1119px;
+                
+                color: #000000;
+
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="header">
+            <div id="heading"><div id="heading1">Leaderboard</div></div>
+            <div id="line"><hr id="h1"></div>
+            <div id="circle2">
+                <p class="container">2</p>
+            </div>
+            <div id="circle1">
+                <p class="container">1</p>
+            </div>
+            <div id="circle3">
+                <p class="container">3</p>
+            </div>
+            <div id="oc2">
+                <div id="ic2">
+
+                </div>
+            </div>
+            <div id="oc1">
+                <div id="ic1">
+
+                </div>
+            </div>
+            <div id="oc3">
+                <div id="ic3">
+
+                </div>
+            </div>
+            <div class="rect1" id="re1">
+                <div class="text1">
+                    <p>Jeremy . 672</p>
+                </div>
+            </div>
+            <div class="rect1" id="re2">
+                <div class="text1">
+                    <p>Jefferey . 542</p>
+                </div>
+            </div>
+            <div id="rect3">
+                <div class="text1">
+                    <p>Amanda . 764</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bars" id="bar1">
+            <div class="text3" id="t1">
+                <p class="text4">4</p>
+            </div>
+            <div class="icon" id="i1">
+                
+            </div>
+            <div class="name">
+                <p>Joe</p>
+            </div>
+            <div class="score">
+                <p>445</p>
+            </div>
+        </div>
+        <div class="bars" id="bar2">
+            <div class="text3" id="t1">
+                <p class="text4">5</p>
+            </div>
+            <div class="icon" id="i1">
+                
+            </div>
+            <div class="name">
+                <p>Jenny</p>
+            </div>
+            <div class="score">
+                <p>438</p>
+            </div>
+
+        </div>
+        <div class="bars" id="bar3">
+            <div class="text3" id="t1">
+                <p class="text4">6</p>
+            </div>
+            <div class="icon" id="i1">
+                
+            </div>
+            <div class="name">
+                <p>Josh</p>
+            </div>
+            <div class="score">
+                <p>432</p>
+            </div>
+
+        </div>
+        <div class="bars" id="bar4">
+            <div class="text3" id="t1">
+                <p class="text4">7</p>
+            </div>
+            <div class="icon" id="i1">
+                
+            </div>
+            <div class="name">
+                <p>Stella</p>
+            </div>
+            <div class="score">
+                <p>321</p>
+            </div>
+
+        </div>
+        <div class="bars" id="bar5">
+            <div class="text3" id="t1">
+                <p class="text4">8</p>
+            </div>
+            <div class="icon" id="i1">
+                
+            </div>
+            <div class="name">
+                <p>Sally</p>
+            </div>
+            <div class="score">
+                <p>300</p>
+            </div>
+
+        </div>
+
+    </body>
+</html>
